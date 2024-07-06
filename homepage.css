@@ -1,0 +1,76 @@
+/* Homepage Specific Styles */
+.intro {
+   text-align: center;
+   margin-bottom: 40px;
+}
+
+.intro h1 {
+   font-size: 36px;
+   font-weight: bold;
+   color: #white;
+}
+
+.intro p {
+   font-size: 18px;
+   color: #white;
+   margin-bottom: 20px;
+}
+
+.rankings {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 40px;
+}
+
+.rank {
+   flex: 1;
+   text-align: center;
+}
+
+.rank img.img_icon {
+   width: 80px;
+   height: 80px;
+   margin-bottom: 20px;
+}
+
+.rank-heading {
+   font-size: 24px;
+   font-weight: bold;
+   color: #333;
+   margin-bottom: 10px;
+}
+
+.rank-text {
+   font-size: 16px;
+   color: #666;
+   margin-bottom: 20px;
+}
+
+.about-me {
+   display: flex;
+   align-items: center;
+   margin-top: 40px;
+}
+
+.about-me-text {
+   flex: 1;
+}
+
+.about-me-text h2 {
+   font-size: 28px;
+   font-weight: bold;
+   color: #333;
+   margin-bottom: 20px;
+}
+
+.about-me-text p {
+   font-size: 18px;
+   color: #666;
+   line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+   .rankings {
+      flex-direction: column;
+   }
+}

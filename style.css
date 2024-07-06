@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+/* CSS for main element */
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 520px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("/WebDevelopment/public_html/image/home_banner.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.intro h1 {
+    font-family: sans-serif;
+    font-size: 60px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.intro p {
+    font-size: 20px;
+    color: #d1d1d1;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.intro button {
+    background-color: #5edaf0;
+    color: #000;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4);
+}
+
+.rankings {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 80px;
+}
+
+.rankings .rank {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.img_icon {
+    width: 30%;
+    height: 30%;
+}
+
+.rankings .rank .rank-heading {
+    font-size: 20px;
+    color: #333333;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+.rankings .rank .rank-text {
+    font-size: 15px;
+    color: #585858;
+    margin: 10px 0;
+}
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 80px;
+    border-top: 2px solid #eeeeee;
+}
+
+.about-me img {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-me-text h2 {
+    font-size: 30px;
+    color: #333333;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.about-me-text p {
+    font-size: 15px;
+    color: #585858;
+    margin: 10px 0;
+}
+
+:root {
+    
+    --red: #c0392b;
+    --orange: #f39c12;
+    --black: #333;
+    --white: #fff;
+    --light-color: #666;
+    --light-white: #ccc;
+    --light-bg: #f5f5f5;
+    --border: .1rem solid var(--black);
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+* {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+*::selection {
+    background-color: #5edaf0;
+    color: var(--white);
+}
+
+*::-webkit-scrollbar {
+    height: .5rem;
+    width: 1rem;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #5edaf0;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 3rem 2rem;
+}
+
+.empty {
+    padding: 1.5rem;
+    text-align: center;
+    border: var(--border);
+    background-color: var(--white);
+    color: var(--red);
+    font-size: 2rem;
+}
+
+.message {
+    position: sticky;
+    top: 0;
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: var(--white);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10000;
+    gap: 1.5rem;
+}
+
+.message span {
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.message i {
+    cursor: pointer;
+    color: var(--red);
+    font-size: 2.5rem;
+}
+
+.message i:hover {
+    transform: rotate(90deg);
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    color: var(--black);
+    font-size: 4rem;
+}
+
+.btn,
+.option-btn,
+.delete-btn,
+.white-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    color: var(--black);
+    font-size: 1.8rem;
+    border-radius: .5rem;
+    text-transform: capitalize;
+}
+
+.btn:hover,
+.option-btn:hover,
+.delete-btn:hover {
+    background-color: var(--black);
+}
+
+.white-btn,
+.btn {
+    background-color: #5edaf0;
+}
+
+.option-btn {
+    background-color: #f39c12;
+}
+
+.delete-btn {
+    background-color: #c0392b;
+}
+
+.white-btn:hover {
+    background-color: #fff;
+    color: var(--black);
+}
+
+.heading {
+    min-height: 30vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background: url(../images/heading-bg.webp) no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.heading h3 {
+    font-size: 5rem;
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+.heading p {
+    font-size: 2.5rem;
+    color: var(--light-color);
+}
+
+.heading p a {
+    color: #5edaf0;
+}
+
+.heading p a:hover {
+    text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: translateY(1rem);
+        opacity: .2s;
+    }
+}
+
+.form-container {
+    min-height: 100vh;
+    background-color: var(--light-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.form-container form {
+    padding: 2rem;
+    width: 50rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    background-color: var(--white);
+    text-align: center;
+}
+
+.form-container form h3 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.form-container form .box {
+    width: 100%;
+    border-radius: .5rem;
+    background-color: var(--light-bg);
+    padding: 1.2rem 1.4rem;
+    font-size: 1.8rem;
+    color: var(--black);
+    border: var(--border);
+    margin: 1rem 0;
+}
+
+.form-container form p {
+    padding-top: 1.5rem;
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.form-container form p a {
+    color: #5edaf0;
+}
+
+.form-container form p a:hover {
+    text-decoration: underline;
+}
+
+/* Generic Styles */
+/* Add your generic styles here */
+
+/* Reset and basic styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+}
+
+/* Header Styles */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+.header .nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.header .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.header .nav-links a:hover {
+    color: #ffc107;
+}
+
+.header .icons {
+    display: flex;
+    gap: 20px;
+}
+
+.header .icons img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .intro {
+        height: 300px;
+    }
+
+    .intro h1 {
+        font-size: 40px;
+    }
+
+    .intro p {
+        font-size: 16px;
+    }
+
+    .rankings {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .rankings .rank {
+        padding: 20px;
+    }
+
+    .about-me {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .about-me img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .about-me-text h2 {
+        font-size: 24px;
+    }
+
+    .about-me-text p {
+        font-size: 14px;
+    }
+}
